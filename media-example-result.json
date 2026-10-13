@@ -1,0 +1,33 @@
+{
+  "assets": [
+    {
+      "id": "approved-narration",
+      "action": "reuse",
+      "cache_key": "5f7aeefe546889cfc45c84082cba0c1f731d14a51871fff2f39ceb990866761c",
+      "depends_on": [],
+      "planned_generation_cost": 0
+    },
+    {
+      "id": "product-mesh",
+      "action": "blocked",
+      "cache_key": "9358ce893010a7ba87b84fe9cf55987a692eb6b8d26bba0a93ff35228c107192",
+      "depends_on": [],
+      "planned_generation_cost": 0
+    },
+    {
+      "id": "shot-1",
+      "action": "generate_after_dependency_outputs_verified",
+      "cache_key": "39d2be0a3fce0c371d123200366d0df61b221139f073dd9e8abf4b4643d7e3e3",
+      "depends_on": [
+        "approved-narration"
+      ],
+      "planned_generation_cost": 5
+    }
+  ],
+  "reuse_candidates": 1,
+  "blocked_assets": 1,
+  "known_planned_generation_cost": 5.0,
+  "currency": "USD",
+  "unknown_cost_assets": 0,
+  "notice": "Plan only: estimates are supplied, not provider quotes. No actual savings, quality or runtime measured. Rehash changed dependency outputs before generating downstream assets. Reuse decisions require operator review."
+}

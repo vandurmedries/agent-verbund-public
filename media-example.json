@@ -1,0 +1,79 @@
+{
+  "currency": "USD",
+  "assets": [
+    {
+      "id": "shot-1",
+      "brief_approved": true,
+      "rights_confirmed": true,
+      "depends_on": [
+        "approved-narration"
+      ],
+      "spec": {
+        "modality": "video",
+        "provider": "synthetic-example",
+        "model_version": "v1",
+        "settings": {
+          "quality": "preview"
+        },
+        "input_hashes": [
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ]
+      },
+      "estimate": {
+        "cost": 5,
+        "currency": "USD",
+        "basis": "illustration only"
+      }
+    },
+    {
+      "id": "approved-narration",
+      "brief_approved": true,
+      "rights_confirmed": true,
+      "depends_on": [],
+      "spec": {
+        "modality": "audio",
+        "provider": "synthetic-example",
+        "model_version": "v1",
+        "settings": {
+          "quality": "preview"
+        },
+        "input_hashes": [
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ]
+      },
+      "estimate": {
+        "cost": 2,
+        "currency": "USD",
+        "basis": "illustration only"
+      },
+      "cache": {
+        "key": "5f7aeefe546889cfc45c84082cba0c1f731d14a51871fff2f39ceb990866761c",
+        "accepted": true,
+        "rights_confirmed": true,
+        "artifact_available": true
+      }
+    },
+    {
+      "id": "product-mesh",
+      "brief_approved": false,
+      "rights_confirmed": true,
+      "depends_on": [],
+      "spec": {
+        "modality": "3d",
+        "provider": "synthetic-example",
+        "model_version": "v1",
+        "settings": {
+          "quality": "preview"
+        },
+        "input_hashes": [
+          "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ]
+      },
+      "estimate": {
+        "cost": 3,
+        "currency": "USD",
+        "basis": "illustration only"
+      }
+    }
+  ]
+}
