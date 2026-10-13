@@ -1,0 +1,24 @@
+{
+  "kind": "preparatory smoke results",
+  "model": "qwen3.5:4b",
+  "arms": 4,
+  "calls": 8,
+  "truncated_outputs": 8,
+  "input_tokens": 4372,
+  "output_tokens": 2000,
+  "wall_seconds": 217.70667749992572,
+  "follow_up": {
+    "word_count": 49,
+    "input_tokens": 450,
+    "output_tokens": 64,
+    "wall_seconds": 9.598850700014737,
+    "done_reason": "stop"
+  },
+  "quality_scores": null,
+  "limitations": [
+    "One task; no independent grading",
+    "Follow-up timing is not a controlled speed comparison",
+    "No handoff superiority result"
+  ],
+  "next_step": "Explicit short outputs plus blinded source-based rubric before full comparison"
+}

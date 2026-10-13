@@ -5,6 +5,8 @@ Version: draft-review-v1, 13 October 2026.
 
 Prepared fixtures and offline readiness checks: [draft-review-fixtures.json](draft-review-fixtures.json). All six source checks passed; generation calls remain zero. The structured contract adds serialized bytes in these examples. This is preparation evidence, not a successful multi-agent performance trial.
 
+Subsequent preparation: [one-task smoke summary](draft-review-smoke-summary.json). Four arms produced eight responses, all truncated at the 250-token cap (4,372 input tokens, 2,000 output tokens, about 218 seconds total). A separate follow-up adding only a 90-word instruction returned a complete 49-word response using 64 output tokens in about 9.6 seconds. This is not a controlled latency comparison: warm-model state and single-trial variation remain confounds. Outputs still need independent quality grading; initial drafts and reviews included fabricated CLI flags. No architecture advantage is established.
+
 ## Question
 Does an explicit handoff improve final documentation quality enough to justify its latency and communication overhead compared with one agent drafting and reviewing its own output?
 
