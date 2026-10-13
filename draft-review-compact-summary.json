@@ -1,0 +1,32 @@
+{
+  "kind": "Second preparation cycle",
+  "variant": "compact-precise-v2",
+  "calls": 8,
+  "truncated": 0,
+  "input_tokens": 4228,
+  "output_tokens": 638,
+  "wall_seconds": 90.01119199994719,
+  "word_counts": [
+    68,
+    71,
+    56,
+    54,
+    56,
+    53,
+    56,
+    54
+  ],
+  "quality_scores": null,
+  "operator_source_review": {
+    "C_fresh_context": "No specific factual defect found in this read; independent grade pending",
+    "B_contract": "Inputs are file paths only conflates CLI and compare function",
+    "A_same_context": "Under 1 MiB conflicts with exactly 1 MiB allowed",
+    "D_draft_only": "Under 1 MiB conflicts with exactly 1 MiB allowed"
+  },
+  "confounds": [
+    "Two instruction changes versus v1",
+    "Single task/repeat",
+    "Warm model/order/time variability"
+  ],
+  "interpretation": "All outputs now finish; no architecture superiority or confirmed quality acceptance."
+}

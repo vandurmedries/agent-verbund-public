@@ -7,6 +7,8 @@ Prepared fixtures and offline readiness checks: [draft-review-fixtures.json](dra
 
 Subsequent preparation: [one-task smoke summary](draft-review-smoke-summary.json). Four arms produced eight responses, all truncated at the 250-token cap (4,372 input tokens, 2,000 output tokens, about 218 seconds total). A separate follow-up adding only a 90-word instruction returned a complete 49-word response using 64 output tokens in about 9.6 seconds. This is not a controlled latency comparison: warm-model state and single-trial variation remain confounds. Outputs still need independent quality grading; initial drafts and reviews included fabricated CLI flags. No architecture advantage is established.
 
+Second preparation cycle: [compact-summary](draft-review-compact-summary.json). A 90-word cap and clarified root-array/file-boundary rubric produced eight nontruncated outputs (638 output tokens, about 90 seconds). Two instructions changed versus v1; a speed or quality effect cannot be attributed to one factor. Three final texts still contain scope or boundary ambiguities in operator source review. External grading invitation: [variant-label-free outputs and rubric](BLIND-REVIEW.json). No external scores or acceptance inferred.
+
 ## Question
 Does an explicit handoff improve final documentation quality enough to justify its latency and communication overhead compared with one agent drafting and reviewing its own output?
 

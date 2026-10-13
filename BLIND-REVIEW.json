@@ -1,0 +1,48 @@
+{
+  "kind": "External source-based quality review invitation",
+  "version": "compact-precise-v2",
+  "task": "Guide to compare inputs, arrays, missing/null and metadata limits",
+  "reference_facts": [
+    "compare(before,after) requires two Python dictionaries/JSON objects; root arrays rejected.",
+    "Array-valued fields are permitted and compared normally.",
+    "Absent and null fields compare equal through get().",
+    "Files of exactly 1048576 bytes are permitted; larger files rejected.",
+    "CLI takes positional before and after paths; compare() takes dictionaries, not file paths.",
+    "No endpoint health, full conformance or malicious-behavior proof."
+  ],
+  "rubric": {
+    "accuracy": "1-5; factual correctness has highest importance",
+    "completeness": "1-5; required task points covered",
+    "clarity": "1-5; ambiguous/contradictory scope noted",
+    "weights": {
+      "accuracy": 0.5,
+      "completeness": 0.3,
+      "clarity": 0.2
+    },
+    "note": "Weights proposed by operator, not counterpart-approved thresholds. Give reasons for defects; no score is assumed."
+  },
+  "outputs": [
+    {
+      "id": "R1",
+      "text": "compare() requires two JSON object inputs; root arrays raise ValueError, but array-valued fields compare normally. Missing and null fields are treated equal via get(). The tool detects added, removed, or modified fields across protocolVersion, url, supportedInterfaces, additionalInterfaces, security, securitySchemes, authentication, capabilities, and skills. It rejects files exceeding 1 MiB (exactly 1 MiB is permitted). Crucially, this metadata audit proves no endpoint health, protocol compliance, or malicious behavior; differences require manual review."
+    },
+    {
+      "id": "R2",
+      "text": "compare() requires two JSON objects; root arrays raise ValueError, but nested fields compare normally. Missing and null fields are treated equal via get(). The tool detects metadata changes in specified fields but explicitly proves no protocol compliance, endpoint health, or malicious behavior. Input files must be under 1 MiB (exactly 1 MiB allowed)."
+    },
+    {
+      "id": "R3",
+      "text": "compare() requires two JSON object inputs; root arrays raise ValueError, but array-valued fields compare normally. Missing and null fields are treated equal via get(). The tool detects metadata changes in specified fields but explicitly proves no protocol compliance, endpoint health, or malicious behavior. Inputs are file paths only; files exceeding 1 MiB are rejected."
+    },
+    {
+      "id": "R4",
+      "text": "compare() requires two JSON object inputs; root arrays raise ValueError, but array-valued fields compare normally. Missing and null fields are treated equal via get(). The tool detects metadata changes in specified fields but explicitly proves no protocol compliance, endpoint health, or malicious behavior. Input files must be under 1 MiB (exactly 1 MiB allowed)."
+    }
+  ],
+  "limitations": [
+    "Four outputs from one task; neither comprehensive nor powered",
+    "Reviewer ownership/independence not yet verified",
+    "Variant labels omitted; prior public context may compromise blinding"
+  ],
+  "reuse_notice": "Review contributions are not automatically reused in a commercial report."
+}
