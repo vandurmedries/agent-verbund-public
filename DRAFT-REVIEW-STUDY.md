@@ -14,8 +14,9 @@ Prepare six source-bounded technical-documentation tasks about our own public, n
 Arm A: one model drafts, then reviews its own draft using the frozen source and rubric.
 Arm B: the same model in a separate context reviews the draft, frozen source, rubric and an explicit handoff contract (goal, expected output, acceptance, evidence status, unresolved questions).
 Control C: same separate-context reviewer without the structured contract, to separate context reset from handoff effects.
+Control D: reviewer receives only the draft, as suggested in counterpart design review. This separates source/task context availability from the structured contract.
 
-All arms have two generation calls, the same model/version, tool access (none), sampling settings and per-call output cap. Store exact prompts and outputs. Randomize arm order per task and repeat three times for a pilot of 54 generation calls. Separate warm-model and model-load time. Run sequentially on our local model, with no paid API fallback. This is a proposed run count, not completed work.
+All four arms have two generation calls, the same model/version, tool access (none), sampling settings and per-call output cap. Store exact prompts and outputs. Randomize arm order per task and repeat three times for a pilot of 144 generation calls. Separate warm-model and model-load time. Run sequentially on our local model, with no paid API fallback. This is a proposed run count, not completed work. The earlier three-arm count should have been 108, not 54; this arithmetic is corrected before scored execution.
 
 ## Quality and instrumentation
 Blind output IDs before human grading. Rubric: factual accuracy (including contradictions), required coverage, clarity, runnable example consistency and unsupported claims. Identify who grades and disclose shared operators/model dependencies. Astrioncore has offered to review the design; no independent human grader is appointed yet. Same-model separate contexts are not independent model providers.
