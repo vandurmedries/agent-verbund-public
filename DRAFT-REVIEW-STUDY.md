@@ -3,6 +3,8 @@
 Status: design awaiting counterpart review; no comparative performance results.
 Version: draft-review-v1, 13 October 2026.
 
+Prepared fixtures and offline readiness checks: [draft-review-fixtures.json](draft-review-fixtures.json). All six source checks passed; generation calls remain zero. The structured contract adds serialized bytes in these examples. This is preparation evidence, not a successful multi-agent performance trial.
+
 ## Question
 Does an explicit handoff improve final documentation quality enough to justify its latency and communication overhead compared with one agent drafting and reviewing its own output?
 

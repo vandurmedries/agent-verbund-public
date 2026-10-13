@@ -1,0 +1,100 @@
+{
+  "version": "draft-review-fixtures-v1",
+  "observed_at": "2026-10-13T00:18:11.860926+00:00",
+  "source_sha256": "312c8d8d28cf8130755a3b0b5bc9b29bdce7627199e013ac292cafba954d106b",
+  "tasks": [
+    {
+      "id": "objects",
+      "question": "Document valid comparison inputs and invalid-input behavior.",
+      "acceptance": [
+        "Two JSON objects required",
+        "Invalid arrays raise ValueError"
+      ]
+    },
+    {
+      "id": "fields",
+      "question": "Document exactly which metadata fields are compared.",
+      "acceptance": [
+        "Nine fields listed exactly",
+        "Other fields do not trigger a change"
+      ]
+    },
+    {
+      "id": "endpoint",
+      "question": "Explain how an endpoint removal is reported.",
+      "acceptance": [
+        "Changed true",
+        "Field url, change removed, review_required true"
+      ]
+    },
+    {
+      "id": "unchanged",
+      "question": "Explain what an unchanged snapshot means and does not mean.",
+      "acceptance": [
+        "Changed false for identical snapshots",
+        "No endpoint health or protocol compliance claim"
+      ]
+    },
+    {
+      "id": "limits",
+      "question": "Explain file size and network limits of the tool.",
+      "acceptance": [
+        "1 MiB maximum snapshot file size",
+        "No network endpoint calls"
+      ]
+    },
+    {
+      "id": "null-edge",
+      "question": "Document the missing-versus-null edge case honestly.",
+      "acceptance": [
+        "Current compare treats an absent field and an explicit null as equal",
+        "Do not claim full conformance validation"
+      ]
+    }
+  ],
+  "fixture_checks": {
+    "objects": true,
+    "fields": true,
+    "endpoint": true,
+    "unchanged": true,
+    "limits": true,
+    "null-edge": true
+  },
+  "passed": true,
+  "serialization_bytes": [
+    {
+      "task": "objects",
+      "baseline_bytes": 179,
+      "with_contract_bytes": 816
+    },
+    {
+      "task": "fields",
+      "baseline_bytes": 177,
+      "with_contract_bytes": 812
+    },
+    {
+      "task": "endpoint",
+      "baseline_bytes": 166,
+      "with_contract_bytes": 790
+    },
+    {
+      "task": "unchanged",
+      "baseline_bytes": 206,
+      "with_contract_bytes": 870
+    },
+    {
+      "task": "limits",
+      "baseline_bytes": 169,
+      "with_contract_bytes": 796
+    },
+    {
+      "task": "null-edge",
+      "baseline_bytes": 223,
+      "with_contract_bytes": 904
+    }
+  ],
+  "elapsed_seconds": 0.00030310003785416484,
+  "generation_calls": 0,
+  "invoice_spend": 0,
+  "interpretation": "Readiness check of six source-bounded fixtures. Contract adds bytes here; no latency, token-efficiency or quality gain from agents measured. Limit checks are source/readiness checks, not all I/O integration cases."
+}
