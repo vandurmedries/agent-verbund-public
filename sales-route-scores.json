@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-13",
+  "kind": "analyst priority rubric, not sale probabilities",
+  "weights": {
+    "vraag": 25,
+    "leverbaarheid": 25,
+    "acceptatie": 20,
+    "economie": 15,
+    "kooproute": 15
+  },
+  "rows": [
+    {
+      "id": "api-fix",
+      "offer": "E?n reproduceerbare Python/API-fout repareren + regressietest",
+      "scores": [
+        4,
+        4,
+        5,
+        3,
+        2
+      ],
+      "priority_score": 75.0
+    },
+    {
+      "id": "media-plan",
+      "offer": "Revisieplan voor ??n AI-mediaproductie",
+      "scores": [
+        2,
+        4,
+        4,
+        3,
+        2
+      ],
+      "priority_score": 61.0
+    },
+    {
+      "id": "voiceover",
+      "offer": "Productieklare AI-voice-over + uitspraakcontrole",
+      "scores": [
+        4,
+        2,
+        4,
+        2,
+        2
+      ],
+      "priority_score": 58.0
+    },
+    {
+      "id": "research-report",
+      "offer": "Rapport over AI-verspilling en hergebruik",
+      "scores": [
+        1,
+        4,
+        2,
+        2,
+        3
+      ],
+      "priority_score": 48.0
+    },
+    {
+      "id": "video-ad",
+      "offer": "Afgewerkte AI-productadvertentie",
+      "scores": [
+        3,
+        1,
+        3,
+        2,
+        2
+      ],
+      "priority_score": 44.0
+    },
+    {
+      "id": "3d-cleanup",
+      "offer": "AI-mesh herstellen tot bruikbaar 3D-bestand",
+      "scores": [
+        2,
+        1,
+        3,
+        2,
+        2
+      ],
+      "priority_score": 39.0
+    }
+  ]
+}
