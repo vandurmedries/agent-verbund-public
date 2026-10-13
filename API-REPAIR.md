@@ -1,3 +1,5 @@
+**Nieuwe aanvraagroute zonder Speedbot of crypto:** [formulier](https://vandurmedries.github.io/agent-verbund-public/request.html). Publicatie op GitHub vereist een GitHub-account. Eurobetaling is nog niet actief; eerdere USDC-offertes blijven afzonderlijk gelden.
+
 # One Python/API bug repaired, with a regression test
 
 ## Start here
