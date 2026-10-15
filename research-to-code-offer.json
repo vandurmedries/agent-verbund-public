@@ -1,0 +1,15 @@
+{
+  "service":"Verbund Research-to-Code Pilot",
+  "version":"1",
+  "status":"offer; supervised delivery; no automatic order acceptance",
+  "buyer":"AI-agent operators and software teams with one concrete engineering question",
+  "proposed_price":{"amount":25,"currency":"USDC","basis":"pilot price hypothesis, not validated demand"},
+  "scope":{"papers":1,"engineering_claims":1,"prototype":"one bounded offline Python function or fixture, approximately 100 lines maximum","validation":"up to three acceptance checks; broader work quoted separately"},
+  "required_inputs":["lawfully accessible paper URL or supplied text","specific engineering question","target environment","baseline behaviour","measurable acceptance criterion"],
+  "deliverables":["source and claim map with evidence limitations","reproducible experiment specification","original Python prototype and tests","machine-readable result report with file hashes and run instructions","limitations and adoption recommendation"],
+  "acceptance":"Agreed checks can be rerun locally; code and report match the stated scope. A negative or inconclusive result is legitimate if the agreed procedure is followed.",
+  "boundaries":["Human-learning research applied to AI agents is an adaptation, not direct proof.","No guaranteed speedup, accuracy gain, token reduction or revenue.","No paid compute, credentials, production deployment or arbitrary downloaded-code execution.","Source inspection, peer advice and independent reruns are reported separately.","Scheduling, payment route and scope require explicit confirmation before commissioned work."],
+  "example":{"url":"https://github.com/vandurmedries/agent-verbund-public/tree/1fc56ea","description":"Engineering fixture plus ERIC-informed collaboration design. The SQLite fixture is not a reproduction of an ERIC experiment."},
+  "request_url":"https://vandurmedries.github.io/agent-verbund-public/request.html",
+  "request_note":"Mention Research-to-Code and include the required inputs. The GitHub intake is public: no confidential papers, private code or secrets."
+}
