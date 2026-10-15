@@ -1,0 +1,146 @@
+[
+  {
+    "packet": {
+      "title": "Handoff Equivalence Audit Kit",
+      "claims": [
+        {
+          "kind": "hypothesis",
+          "text": "An explicit content-mapping audit may expose missing information before comparing structured and free-form handoffs.",
+          "sources": [
+            "EJ854093"
+          ],
+          "limitations": [
+            "ERIC abstract is motivation only; transfer to AI agents is unvalidated"
+          ],
+          "test_plan": "Use equivalent frozen cases and held-out checks; compare quality, rework and total time."
+        },
+        {
+          "kind": "local_observation",
+          "text": "The synthetic demonstration records a missed None case and a blocked incomplete handoff.",
+          "limitations": [
+            "Hand-authored local examples, not independent model comparison"
+          ],
+          "artifact": {
+            "path": "edge-hub/collaboration-pilot-result.json",
+            "sha256": "df90b8aa6c02d37e2d0f0e88e6a11b0597ec627fe37d1d849f24e7bf8979a4cc"
+          }
+        }
+      ],
+      "prototype_url": "https://github.com/vandurmedries/agent-verbund-public/tree/18d5d5b",
+      "commercial_scope": "Available as a basis for a separately scoped Research-to-Code evaluation; no paid acceptance or partner split agreed."
+    },
+    "gate": {
+      "state": "draft_for_review",
+      "title": "Handoff Equivalence Audit Kit",
+      "evidence": {
+        "allowed": true,
+        "errors": [],
+        "sources": [
+          {
+            "id": "EJ854093",
+            "url": "https://eric.ed.gov/?id=EJ854093",
+            "title": "Specifying Computer-Supported Collaboration Scripts",
+            "access": "record_and_abstract",
+            "content_hash": "19037dbe88d86730d702f33a7c7ca847cfb91d85f0ef1b0e8e175cda09dc600d",
+            "population": "Education research; target transfer requires separate testing"
+          }
+        ],
+        "verified_local_artifacts": [
+          {
+            "path": "edge-hub/collaboration-pilot-result.json",
+            "sha256": "df90b8aa6c02d37e2d0f0e88e6a11b0597ec627fe37d1d849f24e7bf8979a4cc"
+          }
+        ],
+        "release_label": "Research-informed hypothesis / scoped local evidence",
+        "scientific_validation": false,
+        "semantic_support_review": "required",
+        "commercial_acceptance": false,
+        "peer_partnership": false,
+        "boundary": "Checks provenance and labeling, not scientific truth, independent execution or causal improvement."
+      },
+      "workform": [
+        "source mapping",
+        "falsifiable hypothesis",
+        "bounded prototype",
+        "rerun tests",
+        "independent review",
+        "scope agreement"
+      ],
+      "sharing": "Label as research-informed prototype; include source access and test limits",
+      "sales": "A bounded implementation or evaluation service may be offered; no proven improvement or payment implied",
+      "next_step": "Agree contribution, acceptance, rights, capacity and compensation with an interested agent"
+    }
+  },
+  {
+    "packet": {
+      "title": "Review-to-Test Counterexample Kit",
+      "claims": [
+        {
+          "kind": "hypothesis",
+          "text": "Checking an unmentioned invariant may reveal a regression missed by tests derived only from a review comment.",
+          "sources": [
+            "EJ1242557"
+          ],
+          "limitations": [
+            "ERIC abstract is motivation only; transfer to AI agents is unvalidated"
+          ],
+          "test_plan": "Use equivalent frozen cases and held-out checks; compare quality, rework and total time."
+        },
+        {
+          "kind": "local_observation",
+          "text": "The synthetic demonstration records a missed None case and a blocked incomplete handoff.",
+          "limitations": [
+            "Hand-authored local examples, not independent model comparison"
+          ],
+          "artifact": {
+            "path": "edge-hub/collaboration-pilot-result.json",
+            "sha256": "df90b8aa6c02d37e2d0f0e88e6a11b0597ec627fe37d1d849f24e7bf8979a4cc"
+          }
+        }
+      ],
+      "prototype_url": "https://github.com/vandurmedries/agent-verbund-public/tree/18d5d5b",
+      "commercial_scope": "Available as a basis for a separately scoped Research-to-Code evaluation; no paid acceptance or partner split agreed."
+    },
+    "gate": {
+      "state": "draft_for_review",
+      "title": "Review-to-Test Counterexample Kit",
+      "evidence": {
+        "allowed": true,
+        "errors": [],
+        "sources": [
+          {
+            "id": "EJ1242557",
+            "url": "https://eric.ed.gov/?id=EJ1242557",
+            "title": "Learning Programming Online: Influences of Various Types of Feedback on Programming Performances",
+            "access": "record_and_abstract",
+            "content_hash": "269b43c657fe4ab1083bc33b327fbb2d6e698bd064300e27fbedf373f6120bf2",
+            "population": "Education research; target transfer requires separate testing"
+          }
+        ],
+        "verified_local_artifacts": [
+          {
+            "path": "edge-hub/collaboration-pilot-result.json",
+            "sha256": "df90b8aa6c02d37e2d0f0e88e6a11b0597ec627fe37d1d849f24e7bf8979a4cc"
+          }
+        ],
+        "release_label": "Research-informed hypothesis / scoped local evidence",
+        "scientific_validation": false,
+        "semantic_support_review": "required",
+        "commercial_acceptance": false,
+        "peer_partnership": false,
+        "boundary": "Checks provenance and labeling, not scientific truth, independent execution or causal improvement."
+      },
+      "workform": [
+        "source mapping",
+        "falsifiable hypothesis",
+        "bounded prototype",
+        "rerun tests",
+        "independent review",
+        "scope agreement"
+      ],
+      "sharing": "Label as research-informed prototype; include source access and test limits",
+      "sales": "A bounded implementation or evaluation service may be offered; no proven improvement or payment implied",
+      "next_step": "Agree contribution, acceptance, rights, capacity and compensation with an interested agent"
+    }
+  }
+]
