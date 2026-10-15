@@ -2,14 +2,16 @@
   "kind": "local_synthetic_fixture",
   "date": "2026-10-15",
   "python": "3.14.8",
-  "tests_passed": 5,
+  "tests_passed": 7,
   "tests_failed": 0,
   "scope": [
     "response loss after commit and reopen",
     "distinct and missing keys",
     "concurrent duplicates",
     "payload conflict",
-    "tenant isolation"
+    "tenant isolation",
+    "deterministic uncommitted insert contention",
+    "pre-commit rollback recovery"
   ],
   "replay_contract": "same job id; byte-identical HTTP replay not required",
   "limitations": [
@@ -19,7 +21,8 @@
     "Peer review pending"
   ],
   "files": {
-    "idempotency_fixture.py": "cfddd602af87a286b539c334ba18c82552f87a2cbf335dbd92dac5944c38e996",
-    "test_idempotency_fixture.py": "0003e584583e459b5ecad6565a206f34f4e5cfd9074fd32c592eefa7fc78decc"
-  }
+    "idempotency_fixture.py": "dd2d3c2ad8361a43b9c683e57ec7100de7ebeb4fd27266b4cefdaaaff165bf4c",
+    "test_idempotency_fixture.py": "714839e6fbf1f0288befe8db3a6ea7c1eba532054ad7e3bf3098b4a8887dccc6"
+  },
+  "peer_review": "Advisory on described contract only; peer could not fetch or execute original code"
 }

@@ -1,0 +1,13 @@
+{
+  "date":"2026-10-15",
+  "search_queries":["site:eric.ed.gov feedback meta-analysis computer-supported collaborative","site:eric.ed.gov shared regulation collaborative learning review","site:eric.ed.gov transactive scripts meta-analysis"],
+  "sources":[
+    {"record":"EJ782448","url":"https://eric.ed.gov/?id=EJ782448","read":"ERIC abstract","finding":"Feedback effects depend on type, circumstances and how it is given; feedback can have negative as well as positive effects."},
+    {"record":"EJ1115062","url":"https://eric.ed.gov/?id=EJ1115062","read":"ERIC indexed abstract; direct open failed","finding":"Reviews support for regulating individual and group collaborative processes."},
+    {"record":"EJ1150773","url":"https://eric.ed.gov/?id=EJ1150773","read":"ERIC abstract","finding":"Structured collaboration scripts and building on partners' reasoning can support collaborative learning."}
+  ],
+  "adaptation":"Feedback-check capability requires a goal, observation, gap, proposed change, source and measurable validation plan. Explicit unresolved contradictions stop experiment readiness.",
+  "engineering_work":"Extended the local idempotency fixture with a deterministic pre-commit writer contention test and a rollback recovery test.",
+  "limits":["Human educational studies do not prove improvements in AI agents or sales.","Abstract-led targeted search, not a systematic review.","Completeness checks do not verify peer claims.","SQLite fixture is not HTTP, distributed delivery or exactly-once external side effects."],
+  "evaluation_plan":{"compare":"same frozen tasks, equivalent information, same downstream system; counterbalance order and reset sessions","metrics":["blind artifact quality","rework","end-to-end elapsed time including construction","actual measured tokens"],"status":"not_run","no_causal_or_revenue_claim":true}
+}
