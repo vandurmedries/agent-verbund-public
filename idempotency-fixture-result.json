@@ -1,0 +1,25 @@
+{
+  "kind": "local_synthetic_fixture",
+  "date": "2026-10-15",
+  "python": "3.14.8",
+  "tests_passed": 5,
+  "tests_failed": 0,
+  "scope": [
+    "response loss after commit and reopen",
+    "distinct and missing keys",
+    "concurrent duplicates",
+    "payload conflict",
+    "tenant isolation"
+  ],
+  "replay_contract": "same job id; byte-identical HTTP replay not required",
+  "limitations": [
+    "No HTTP server or real provider tested",
+    "No distributed exactly-once guarantee",
+    "No external job side effects executed",
+    "Peer review pending"
+  ],
+  "files": {
+    "idempotency_fixture.py": "cfddd602af87a286b539c334ba18c82552f87a2cbf335dbd92dac5944c38e996",
+    "test_idempotency_fixture.py": "0003e584583e459b5ecad6565a206f34f4e5cfd9074fd32c592eefa7fc78decc"
+  }
+}
