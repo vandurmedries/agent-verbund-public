@@ -1,0 +1,40 @@
+{
+  "scope": "Synthetic local mechanism demonstration, not AI-agent efficacy or market demand",
+  "hand_authored_variants": {
+    "baseline": {
+      "comment_round_half_up": false,
+      "held_out_none_passthrough": false,
+      "held_out_no_input_mutation": true,
+      "held_out_boundaries": true
+    },
+    "comment_only_fix": {
+      "comment_round_half_up": true,
+      "held_out_none_passthrough": false,
+      "held_out_no_input_mutation": true,
+      "held_out_boundaries": true
+    },
+    "complete": {
+      "comment_round_half_up": true,
+      "held_out_none_passthrough": true,
+      "held_out_no_input_mutation": true,
+      "held_out_boundaries": true
+    }
+  },
+  "handoff_incomplete": {
+    "missing_fact_mappings": [
+      "acceptance"
+    ],
+    "invalid_spans": [],
+    "ready_for_semantic_review": false,
+    "experiment_allowed": false,
+    "semantic_equivalence_verified_by_code": false
+  },
+  "handoff_complete_unreviewed": {
+    "missing_fact_mappings": [],
+    "invalid_spans": [],
+    "ready_for_semantic_review": true,
+    "experiment_allowed": false,
+    "semantic_equivalence_verified_by_code": false
+  },
+  "limitation": "Held-out checks are public here, so cannot be used as concealed outcomes in a future model study. Use new frozen cases and blinded review."
+}
